@@ -1,0 +1,106 @@
+.triage-hero {
+  border-radius: var(--border-radius-lg);
+  padding: 24px 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.triage-hero.moderate {
+  background: var(--color-warning-light);
+  border: 1px solid rgba(186, 117, 23, 0.3);
+}
+
+.triage-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+  background: rgba(255,255,255,0.7);
+  color: var(--color-warning);
+  box-shadow: var(--shadow-sm);
+}
+
+.triage-level {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-warning);
+  margin-bottom: 8px;
+}
+
+[data-theme="dark"] .triage-level { color: #f59e0b; }
+
+.triage-desc {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.confidence-card {
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--color-text-primary);
+}
+
+.confidence-item {
+  margin-bottom: 12px;
+}
+
+.confidence-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.pct.high { color: var(--color-primary-dark); }
+.pct.med { color: var(--color-warning); }
+
+.conf-bar {
+  height: 6px;
+  background: var(--color-border-tertiary);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.conf-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 1s ease-out;
+}
+
+.conf-fill.high-fill { background: var(--color-primary); }
+.conf-fill.med-fill { background: var(--color-warning); }
+
+.disclaimer {
+  margin-top: 16px;
+  font-size: 12px;
+  color: var(--color-text-tertiary);
+  padding: 10px;
+  background: var(--color-bg-secondary);
+  border-radius: var(--border-radius-md);
+  text-align: center;
+  border: 1px dashed var(--color-border-primary);
+}
+
+.action-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.chat-btn {
+  margin-top: 8px;
+}

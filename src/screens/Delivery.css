@@ -1,0 +1,120 @@
+.delivery-status {
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--color-primary);
+  background: var(--color-primary-light);
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(29, 158, 117, 0.15);
+}
+
+.eta-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.eta-timer {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.eta-text {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.delivery-label {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.order-id {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--color-border-secondary);
+}
+
+.steps-track {
+  display: flex;
+  flex-direction: column;
+}
+
+.step-row {
+  display: flex;
+  align-items: stretch;
+}
+
+.step-line-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 24px;
+  margin-right: 12px;
+}
+
+.step-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  z-index: 2;
+  position: relative;
+}
+
+.step-dot.done {
+  background: var(--color-primary);
+}
+
+.step-dot.active {
+  background: var(--color-warning);
+  box-shadow: 0 0 0 4px var(--color-warning-light);
+}
+
+.step-dot.pending {
+  background: var(--color-bg-secondary);
+  border: 2px solid var(--color-border-primary);
+}
+
+.step-connector {
+  width: 2px;
+  flex: 1;
+  background: var(--color-border-primary);
+  margin: -2px 0;
+}
+
+.step-connector.done {
+  background: var(--color-primary);
+}
+
+.step-info {
+  flex: 1;
+  padding-bottom: 24px;
+}
+
+.step-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.step-title.active {
+  color: var(--color-warning);
+}
+
+.step-title.pending {
+  color: var(--color-text-tertiary);
+}
+
+.step-sub {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  margin-top: 4px;
+}
